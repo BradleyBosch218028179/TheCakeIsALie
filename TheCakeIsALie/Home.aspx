@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="TheCakeIsALie.Home" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -14,17 +15,13 @@
             	<div class="post_section">
                 	<div class="post_header">
                         <div class="post_title_info">
-                            <div class="post_title">Free Website Templates</div>
-                            <div class="post_info">Posted on May 28th in <a href="#">Web Templates</a> by TemplateMo</div>
+                            <div class="post_title">Popular and Recommended games</div></br>
                       </div>
-                        <div class="comment">
-                        	48
-                        </div>
                     </div>
                         
                     <div class="post_content">
-                        <img src="images/templatemo_image_01.jpg" alt="image 1" />
-                        <p>TemplateMo provides a lot of high quality <a href="#">free css templates</a> for your personal or commercial websites. All templates are absolutely free to download, modify and apply for your websites. All of them are W3C standard compliant XHTML/CSS layouts. Enjoy!</p>
+                        <img src="images/games.jpg" alt="image 1" />
+                        <p style="font-size:18px"> These games have been carefully selected for you to enjoy! </p>
                       <div class="link_button"><a href="#">Continue reading...</a></div>
 					</div>
                     <div class="cleaner">&nbsp;</div>
@@ -35,17 +32,13 @@
                 <div class="post_section">
                 	<div class="post_header">
                         <div class="post_title_info">
-                            <div class="post_title">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
-                            <div class="post_info">Posted on May 25th in <a href="#">Photography</a> by TemplateMo</div>
+                            <div class="post_title">Our latest specials</div>
                       </div>
-                        <div class="comment">
-                        	64
-                        </div>
                     </div>
                         
                     <div class="post_content">
-                        <img src="images/templatemo_image_03.jpg" alt="image 2" />
-                        <p>Ut nec vestibulum odio. Vivamus vitae nibh eu sem malesuada rutrum et sit amet magna. Praesent ornare mollis lacus, id egestas leo molestie at. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent aliquam velit a magna sodales quis elementum ipsum auctor. Ut at metus leo, et dictum sem.</p>
+                        <img src="images/specials.jpg" alt="image 2" />
+                        <p>Our specials range from R100 to R50. it includes strategy, fantasy, mmorpg, fps, racing, shooting, idle, XBox, indie, platform, Playstation and more!</p>
                         <div class="link_button"><a href="#">Continue reading...</a></div>
 					</div>
                 </div>
@@ -55,17 +48,14 @@
                 <div class="post_section">
                 	<div class="post_header">
                         <div class="post_title_info">
-                            <div class="post_title">Class aptent taciti sociosqu ad litora torquent</div>
-                            <div class="post_info">May 23th in Photography by TemplateMo</div>
+                            <div class="post_title">Subscribe now</div>
                         </div>
-                        <div class="comment">
-                        	32
-                        </div>
+    
                     </div>
                         
                     <div class="post_content">
-                        <img src="images/templatemo_image_02.jpg" alt="image 3" />
-                        <p>Vivamus convallis laoreet nulla, sagittis elementum velit sollicitudin eget. Integer et enim mauris. Quisque aliquam ullamcorper varius. Nam nunc purus, commodo quis consequat vitae, accumsan sit amet nisl. Aenean dapibus tortor vel tellus pretium convallis.</p>
+                        <img src="images/gamers.jpg" alt="image 3" />
+                        <p><p> Subscribe to get the latest news about new game releases before your friends and get valuable tips on how to compete more effectively</p></p>
                         <div class="link_button"><a href="#">Continue reading...</a></div>
 					</div>
                 </div>
@@ -82,14 +72,18 @@
                 <div class="cleaner_h30">&nbsp;</div>
                 
                 <div class="content_right_section">
-		            <div class="content_right_titile_01">Archives</div>
+		            <div class="content_right_titile_01">Gaming Categories</div>
                     <ul>
-                    	<li><a href="#">May 2024</a></li>
-                        <li><a href="#">April 2024</a></li>
-                        <li><a href="#">March 2024</a></li>
-                        <li><a href="#">February 2024</a></li>
-                        <li><a href="#">January 2024</a></li>
-                        <li><a href="#">December 2023</a></li>
+                    	<li><a href="#">strategy</a></li>
+                        <li><a href="#">fantasy</a></li>
+                        <li><a href="#">mmorpg</a></li>
+                        <li><a href="#">fps</a></li>
+                        <li><a href="#">racing</a></li>
+                        <li><a href="#">shooting</a></li>
+                        <li><a href="#">idle</a></li>
+                        <li><a href="#">Playstation</a></li>
+                        <li><a href="#">platform</a></li>
+                         <li><a href="#">XBox</a></li>
                      </ul>
                 </div> 
                 
@@ -115,28 +109,28 @@
                 <div class="content_right_section">
 		            <div class="content_right_titile_01">Recent Posts</div>
                     <div class="recent_post">
-                    	<div class="post_title">Sed metus nisl, placerat vitae iaculis in</div>
-                        Aliquam nec est quis felis venenatis imperdiet. Duis placerat luctus sem.
+                    	<div class="post_title">Spore</div>
+                        Spore is absolutely amazing. I enjoy evolving and building things
                     </div>
                     
                     <div class="recent_post">
-                    	<div class="post_title">Donec molestie aliquet nisi eu facilisis</div>
-                        In vitae placerat enim. Aenean elementum lectus eleifend a pellentesque lacus aliquet. 
+                    	<div class="post_title">Age of Empires</div>
+                        Age of Empires is an absolute classic. I love it so much!
                     </div>
                     
                     <div class="recent_post">
-                    	<div class="post_title">Proin  magna amet fermentum dignissim</div>
-                        Nulla gravida, lacus molestie convallis dolor sem suscipit nisl, ut pharetra erat leo in elit.
+                    	<div class="post_title">Need For Speed Underground</div>
+                        I love Need For Speed Underground as it is so much fun to play and I love smashing police cars.
                   </div>
                     
                     <div class="recent_post">
-                    	<div class="post_title">Fusce pulvinar euismod urna vel viverra</div>
-                        Quisque malesuada laoreet tellus vel iaculis. Morbi nulla leo euismod pulvinar erat.
+                    	<div class="post_title">Call Of Duty Black Ops</div>
+                        Call Of Duty Black Ops is super cool. I can recommend it to anyone who wants a thrill and enjoys shooting zombiess
                     </div>
                     
                     <div class="recent_post">
-                    	<div class="post_title">Class aptent taciti sociosqu ad litora</div>
-                        Curabitur vestibulum est eu purus bibendum eu eleifend diam tempor. Fusce metus eros, faucibus ut hendrerit ac.
+                    	<div class="post_title">Skyrim</div>
+                        SKyrim is awesome as it is set in a fantasy world with dragons and all sorts of mythtical creatures.
                     </div>
                 </div>
                 
