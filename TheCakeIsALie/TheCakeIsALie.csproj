@@ -110,6 +110,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\TheCakeIsALie.dll" />
     <Content Include="bin\TheCakeIsALie.pdb" />
+    <Content Include="Home.aspx" />
     <Content Include="images\rss.png" />
     <Content Include="images\templatemo_ads.jpg" />
     <Content Include="images\templatemo_ads_02.jpg" />
@@ -129,7 +130,6 @@
     <Content Include="images\templatemo_search_button.jpg" />
     <Content Include="images\templatemo_vertical_divider.gif" />
     <Content Include="images\twitter.png" />
-    <Content Include="index.html" />
     <Content Include="obj\Debug\TheCakeIsALie.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\TheCakeIsALie.dll" />
     <Content Include="obj\Debug\TheCakeIsALie.pdb" />
@@ -196,6 +196,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrontEnd.Master.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEnd.Master.designer.cs">
+      <DependentUpon>FrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -217,6 +231,7 @@
     <Content Include="obj\Debug\TheCakeIsALie.csproj.CopyComplete" />
     <Content Include="obj\Debug\TheCakeIsALie.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\TheCakeIsALie.csprojAssemblyReference.cache" />
+    <Content Include="FrontEnd.Master" />
     <None Include="packages.config" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
     <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
