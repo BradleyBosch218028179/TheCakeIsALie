@@ -43,20 +43,22 @@ img {
 .divider_h60 { clear: both; width: 100%; height: 60px; font-size: 1px; background: url(images/templatemo_horizontal_divider.jpg) center repeat-x; }
 
 /* menu */
-#templatemo_menu_wrapper{
-	width:100%;
-	height: 51px;	
+#templatemo_menu_wrapper {
+	width: 100%;
+	height: 51px;
 	margin: 0 auto;
 	color: #ffffff;
+	position: fixed;
 	background: url(images/templatemo_menu_bg_repeat.gif) repeat-x;
 }
 
-#templatemo_menu_wrapper #templatemo_menu_panel{
-	width: 990px;
-	height: 51px;	
-	margin:0 135px;
-	padding: 0 100px;
-}
+	#templatemo_menu_wrapper #templatemo_menu_panel {
+		width: 990px;
+		height: 51px;
+		margin: 0 135px;
+		padding: 0 100px;
+		position: fixed;
+	}
 
 #templatemo_menu_panel ul {
 	float: right;
@@ -97,21 +99,24 @@ img {
 	width:100%;
 	height: 200px;	
 	margin: 0 auto;
+
 }
 
 	#templatemo_header_wrapper #templatemo_header_panel {
-		width: 849px;
 		height: 200px;
-		margin: 0 310px;
-		padding: 0 60px;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		width:60%;
 		background: url(images/Login.jpg) no-repeat;
 		background-size: cover;
+		position: center;
 	}
 
 #templatemo_header_panel .templatemo_header{
 	float: left;
 	margin: 80px 0 0 0;
-	width: 400px;
+	width: 500px;
 	height: 85px;
 	background: url(images/Alpha2.0.png) top left no-repeat;
 }
@@ -184,6 +189,65 @@ img {
 	width: 100px;
 }
 
+/*Sign in Form Box*/
+
+.formBox {
+	width: 100%;
+	padding: 40px 20px;
+	box-sizing: border-box;
+	height: 550px;
+}
+
+	.formBox p {
+		margin: 0;
+		padding: 10px 0px;
+		font-size:28px;
+		color: aquamarine;
+	}
+
+	.formBox input {
+		margin-bottom: 20px;
+	}
+
+		.formBox input[type="text"],
+		.formBox input[type="Password"] {
+			border: none;
+			border-bottom: 2px solid #a6af13;
+			outline: none;
+			height: 40px;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+			.formBox input[type="text"]:focus,
+			.formBox input[type="Password"]:focus 
+			{
+				border-bottom: 2px solid #262626;
+			}
+
+		.formBox input[type ="submit"], .formBox input[type="ForgotPass"] {
+			border: none;
+			outline: none;
+			width: 175px;
+			height: 40px;
+			color: #000;
+			font-size: 20px;
+			background: aquamarine;
+			cursor: pointer;
+		}
+
+
+			.formBox input[type ="submit"], .formBox input[type="ForgotPass"]:hover {
+		     background: aquamarine;
+			}
+
+	.formBox a {
+		color: #ffffff;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
 /* end of header */
 
 /* content */
@@ -200,7 +264,6 @@ img {
 	width: 1060px;
 	margin:0 auto;
 	padding-bottom: 20px;
-	background: url(images/templatemo_content_middle.gif) repeat-y;	
 }
 
 #templatemo_content_wrapper #templatemo_content_bottom {
@@ -217,7 +280,6 @@ img {
 
 #templatemo_content {
 	padding: 20px 40px 20px 40px;
-	background: url(images/BlueBackround.jpg) top center no-repeat; 
 }
 
 #templatemo_content .content_title_01 {
@@ -250,10 +312,10 @@ img {
 }
 
 .post_title_info .post_title {
-	font-size: 25px;
-	color: #51c9c6;
-	margin-bottom: 5px;
-	padding-bottom: 5px;
+	font-size: 32px;
+	color: aquamarine;
+	background:#000;
+	line-height:43px;
 }
 
 .post_title_info  .post_info {
@@ -263,10 +325,16 @@ img {
 	margin: 0 0 20px 0;
 }
 
+.display
+{
+	display:none;
+}
+
 
 ads_250_250
 .post_content {
 	clear: both;
+	display:none;
 }
 
 .post_content img {
@@ -291,16 +359,17 @@ ads_250_250
 	font-size:20px;
 }
 
-#templatemo_content #content_right{
-	float: right;	
+#templatemo_content #content_right {
+	float: right;
+	font-size: 25px;
 	padding: 0 30px;
 	width: 260px;
-	background:url(images/templatemo_vertical_divider.gif) left repeat-y;
+	background: url(images/templatemo_vertical_divider.gif) left repeat-y;
 }
 
 #content_right .content_right_titile_01 {
-	font-size: 20px;
-	color: #747474;
+	font-size: 22px;
+	color: #fff;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #1d1d1d;
