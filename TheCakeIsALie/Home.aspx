@@ -22,6 +22,8 @@
 
                             <!--Create a image slider-->
                             <div class="post_content">
+                                <img class="display" src="images/csgo.jfif" style="width: 100%"/>
+                                <img class="display" src="images/angrybirds.jfif" style="width: 100%"/>
                                 <img class="display" src="images/minecraft.jpg" style="width: 100%"/>
                                 <img class="display" src="images/dbd.jpg" style="width: 100%" />
                                  <img class="display" src="images/fortnite.jpg" style="width: 100%"/>
