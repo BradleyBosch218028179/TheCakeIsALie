@@ -22,16 +22,13 @@
 
                             <!--Create a image slider-->
                             <div class="post_content">
-                                <img class="display"src="images/angrybirds.jfif" style="width: 100%" />
-                                <img class="display"src="images/cod.jpg" style="width: 100%" />
-                                <img class="display"src="images/csgo.jfif" style="width: 100%" />
-                                <img class="display"src="images/dbd.jpg" style="width: 100%" />
-                                <img class="display"src="images/fortnite.jpg" style="width: 100%" />
-                                <img class="display"src="images/injustice.webp" style="width: 100%" />
-                                <img class="display"src="images/minecraft.jpg" style="width: 100%" />
-                                <img class="display"src="images/pubg.jpg" style="width: 100%" />
-                                <img class="display"src="images/rocketleague.jpg" style="width: 100%" />
-                                <img class="display"src="images/wow.jpg" style="width: 100%" />
+                                <img class="display" src="images/minecraft.jpg" style="width: 100%"/>
+                                <img class="display" src="images/dbd.jpg" style="width: 100%" />
+                                 <img class="display" src="images/fortnite.jpg" style="width: 100%"/>
+                                 <img class="display" src="images/pubg.jpg" style="width: 100%"/>
+                                <img class="display" src="images/cod.jpg" style="width: 100%"/>
+                                <img class="display" src="images/rocketleague.jpg" style="width: 100%"/>
+                                <img class="display" src="images/wow.jpg" style="width: 100%"/>
                             </div>
 
                             <script>
@@ -48,7 +45,7 @@
                                     if (myIndex > x.length) { myIndex = 1 }
                                     x[myIndex - 1].style.display = "block";
                                     // Change image every 8 seconds
-                                    setTimeout(carousel, 8000);
+                                    setTimeout(carousel, 2000);
                                 }
                             </script>
 
