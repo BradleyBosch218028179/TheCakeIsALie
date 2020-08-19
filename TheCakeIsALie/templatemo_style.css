@@ -113,12 +113,14 @@ img {
 		position: center;
 	}
 
-#templatemo_header_panel .templatemo_header{
+#templatemo_header_panel .templatemo_header {
 	float: left;
-	margin: 80px 0 0 0;
-	width: 500px;
-	height: 85px;
-	background: url(images/Alpha2.0.png) top left no-repeat;
+	margin: 30px 260px 0 0;
+	width: 400px;
+	height: 300px;
+	background: url(images/BigAlpha2.0.png) top left no-repeat;
+	background-size: contain;
+
 }
 
 #templatemo_header_panel .templatemo_header_right_section{
@@ -170,7 +172,8 @@ img {
 	line-height: normal;
 	padding: 4px;
 	width: 200px;
-	margin: 130px 0 0
+	margin: 130px 0 0;
+	margin-left: -150px;
 }
 
 
