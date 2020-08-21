@@ -20,7 +20,7 @@
             <li><a href="Home.aspx" class="current">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="SignIn.aspx">Sign in</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="Register.aspx">Register</a></li>
             <li><a href="#">Buy</a></li>
             <li><a href="#">Specials</a></li>
             <li><a href="#" class="last">Profile</a></li>

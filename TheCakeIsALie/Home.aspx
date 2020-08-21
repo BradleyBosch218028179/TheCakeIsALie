@@ -98,15 +98,10 @@
 
                 <div id="content_right">
 
-                    <div class="ads_250_250">
-                        <a href="#">
-                            <img src="images/templatemo_ads_02.jpg" alt="250x250 banner" /></a>
-                    </div>
-
                     <div class="cleaner_h30">&nbsp;</div>
 
                     <div class="content_right_section">
-                        <div class="content_right_titile_01">Gaming Categories</div>
+                        <div class="content_right_titile_01">Categories</div>
                         <ul>
                             <li><a href="#">strategy</a></li>
                             <li><a href="#">fantasy</a></li>
@@ -120,27 +115,8 @@
                             <li><a href="#">XBox</a></li>
                         </ul>
                     </div>
-
-                    <div class="cleaner_h30">&nbsp;</div>
-
-                    <div class="content_right_section">
-                        <div class="ads_125_125 right_padding_10">
-                            <a href="#">
-                                <img src="images/templatemo_ads.jpg" alt="125x125 banner 1" /></a>
-                        </div>
-                        <div class="ads_125_125">
-                            <a href="#">
-                                <img src="images/templatemo_ads.jpg" alt="125x125 banner 2" /></a>
-                        </div>
-                        <div class="ads_125_125 right_padding_10">
-                            <a href="#">
-                                <img src="images/templatemo_ads.jpg" alt="125x125 banner 3" /></a>
-                        </div>
-                        <div class="ads_125_125">
-                            <a href="#">
-                                <img src="images/templatemo_ads.jpg" alt="125x125 banner 4" /></a>
-                        </div>
-                    </div>
+                    <br />
+                    <br />
 
                     <div class="cleaner_h30">&nbsp;</div>
 

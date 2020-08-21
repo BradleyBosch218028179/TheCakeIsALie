@@ -252,15 +252,17 @@ img {
 .post_title_info {
 	float: left;
 	width: 660px;
-	line-height:23px;
+	line-height: 23px;
+	font-size: 22px;
 }
 
-.post_title_info .post_title {
-	font-size: 36px;
-	color: aquamarine;
-	background:#000;
-	line-height:43px;
-}
+	.post_title_info .post_title {
+		font-size: 36px;
+		color: aquamarine;
+		background: #000;
+		line-height: 43px;
+		padding: 0px 20px 20px 0px;
+	}
 
 .post_title_info  .post_info {
 	clear: both;
@@ -317,6 +319,9 @@ ads_250_250
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #1d1d1d;
+	font-size: 36px;
+	color: aquamarine;
+	line-height:40px;
 }
 
 #content_right .ads_250_250 {
@@ -343,7 +348,7 @@ ads_250_250
 	color: #747474;
 	margin-bottom: 5px;
 	padding-bottom: 5px;
-	line-height: 24px;
+	line-height: 38px;
 	border-bottom: 1px solid #1a1a1a;
 }
 

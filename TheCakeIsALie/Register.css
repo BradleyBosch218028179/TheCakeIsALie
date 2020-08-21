@@ -20,12 +20,11 @@ body {
 }
 
 .left {
-  position: absolute;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 20px;
-  width: 300px;
+  padding: 58px 90px 10px;
+  width: 600px;
   height: 400px;
   background: #000;
   font-size: 22px;
@@ -61,7 +60,7 @@ input[type="password"]:focus {
 
 input[type="submit"] {
     background: aquamarine;
-    margin-top: 18px;
+    margin-top: 28px;
     width: 150px;
     height: 40px;
     border: none;
@@ -105,17 +104,17 @@ input[type="submit"]:active {
 }
 
 .right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 75px;
-  width: 300px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 0 2px 2px 0;
-  background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 145px 0px 0px;
+    width: 450px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+    background: black;
 }
 
 .right .loginwith {
@@ -125,7 +124,7 @@ input[type="submit"]:active {
     color: #FFF;
     line-height: 30px;
     width: 400px;
-    color: black;
+    color: aquamarine;
 }
 
 button.social-signin {
