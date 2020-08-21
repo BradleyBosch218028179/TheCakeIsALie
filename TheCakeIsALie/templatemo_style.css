@@ -11,8 +11,8 @@ body {
 	line-height: 1.5em;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #857a40;
-	background: #000;
 	background-size: cover;
+	background: #000;
 }
 
 a:link, a:visited { color: #f1d72b; text-decoration: none; font-weight: normal;} 
@@ -115,12 +115,11 @@ img {
 
 #templatemo_header_panel .templatemo_header {
 	float: left;
-	margin: 30px 260px 0 0;
+	margin: 30px 365px 0 0;
 	width: 400px;
 	height: 300px;
 	background: url(images/BigAlpha2.0.png) top left no-repeat;
 	background-size: contain;
-
 }
 
 #templatemo_header_panel .templatemo_header_right_section{
@@ -168,7 +167,7 @@ img {
 	color: #fff;
 	font-size: 13px;
 	font-variant: normal;
-	height: 19px;
+	height: 30px;
 	line-height: normal;
 	padding: 4px;
 	width: 200px;
@@ -183,7 +182,7 @@ img {
 	cursor: pointer;
 	font-size: 12px;
 	font-weight: bold;
-	height: 28px;
+	height: 30px;
 	margin: 0 0 0 10px;
 	padding: 0 6px;
 	text-align: center;
@@ -192,65 +191,7 @@ img {
 	width: 100px;
 }
 
-/*Sign in Form Box*/
-
-.formBox {
-	width: 100%;
-	padding: 40px 20px;
-	box-sizing: border-box;
-	height: 550px;
-}
-
-	.formBox p {
-		margin: 0;
-		padding: 10px 0px;
-		font-size:28px;
-		color: aquamarine;
-	}
-
-	.formBox input {
-		margin-bottom: 20px;
-	}
-
-		.formBox input[type="text"],
-		.formBox input[type="Password"] {
-			border: none;
-			border-bottom: 2px solid #a6af13;
-			outline: none;
-			height: 40px;
-			font-weight: bold;
-			font-size: 20px;
-			line-height: 40px;
-		}
-
-			.formBox input[type="text"]:focus,
-			.formBox input[type="Password"]:focus 
-			{
-				border-bottom: 2px solid #262626;
-			}
-
-		.formBox input[type ="submit"], .formBox input[type="ForgotPass"] {
-			border: none;
-			outline: none;
-			width: 175px;
-			height: 40px;
-			color: #000;
-			font-size: 20px;
-			background: aquamarine;
-			cursor: pointer;
-		}
-
-
-			.formBox input[type ="submit"], .formBox input[type="ForgotPass"]:hover {
-		     background: aquamarine;
-			}
-
-	.formBox a {
-		color: #ffffff;
-		font-size: 22px;
-		font-weight: bold;
-	}
-
+	
 /* end of header */
 
 /* content */
@@ -310,12 +251,12 @@ img {
 
 .post_title_info {
 	float: left;
-	width: 500px;
+	width: 660px;
 	line-height:23px;
 }
 
 .post_title_info .post_title {
-	font-size: 32px;
+	font-size: 36px;
 	color: aquamarine;
 	background:#000;
 	line-height:43px;

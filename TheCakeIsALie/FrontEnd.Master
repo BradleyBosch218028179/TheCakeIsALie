@@ -37,8 +37,8 @@
             
             <div class="search_box">
                 <form action="#" method="get">
-                    <input type="text" name="q" size="10" id="searchfield" title="searchfield" />&nbsp;
-            <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" /></form>
+                    <input type="text" name="q" size="10" id="searchfield" title="searchfield" />
+                    <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" /></form>
             </div> 
         </div>
                 
