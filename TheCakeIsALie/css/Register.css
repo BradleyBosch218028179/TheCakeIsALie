@@ -9,6 +9,13 @@ body {
   background: #000;
 }
 
+#templatemo_content #content_right {
+    float: right;
+    margin: 30px;
+    font-size: 25px;
+    padding: 10px 50px 0px 90px;
+    width: 260px;
+}
 #login-box {
   position: relative;
   margin: 5% auto;
@@ -23,7 +30,7 @@ body {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 58px 90px 10px;
+  padding: 30px 90px 10px;
   width: 600px;
   height: 400px;
   background: #000;
@@ -37,7 +44,7 @@ h1 {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"], input[type="number"] {
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -53,7 +60,7 @@ input[type="password"] {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus, input[type="number"]: focus {
   border-bottom: 2px solid #16a085;
   transition: 0.2s ease;
 }
@@ -108,7 +115,7 @@ input[type="submit"]:active {
     top: 0;
     right: 0;
     box-sizing: border-box;
-    padding: 145px 0px 0px;
+    padding: 121px 0px 0px
     width: 450px;
     height: 400px;
     background-size: cover;

@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <link rel="stylesheet" type = "text/css" href = "SignIn.css"/>
+    <link rel="stylesheet" type = "text/css" href = "css/SignIn.css"/>
      <div id="templatemo_content_panel">
         <div id="templatemo_content_wrapper">
 
@@ -24,19 +24,20 @@
 
     <label>Username:</label>
       <br /><br />
-    <input type="text" name="username" placeholder="Username" runat ="server"/>
+    <input type="text" name="username" placeholder="Username" runat ="server" id ="Username"/>
        <label>Email:</label>
       <br /><br />
-    <input type="text" name="email" placeholder="E-mail" runat ="server"/>
+    <input type="text" name="email" placeholder="E-mail" runat ="server" id ="Email"/>
        <label>Password:</label>
       <br /><br />
-    <input type="password" name="password" placeholder="Password" runat ="server"/>
+    <input type="password" name="password" placeholder="Password" runat ="server" id ="Password"/>
        <label>Retype Password:</label>
       <br /><br />
-    <input type="password" name="password2" placeholder="Retype password" runat ="server"/>
+    <input type="password" name="password2" placeholder="Retype password" runat ="server" id ="Password2"/>
     
       <!--This submit button must redirect them to the producst page-->
-    <input type="submit" name="signup_submit" value="Sign In" />
+    <input runat="server" id="signin" type="submit" name="signup_submit" value="Sign In" onclick="Signin_Click" />
+
   </div>
   
   <div class="right">
@@ -56,6 +57,9 @@
 <br />
     </div>
     </div>
+</div>
+    </div>
+</div>
 </div>
     </div>
 </asp:Content>

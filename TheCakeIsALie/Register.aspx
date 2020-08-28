@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <link rel="stylesheet" type = "text/css" href = "Register.css"/>
+     <link rel="stylesheet" type = "text/css" href = "css/Register.css"/>
      <div id="templatemo_content_panel">
         <div id="templatemo_content_wrapper">
 
@@ -26,28 +26,29 @@
 
     <label>Username:</label>
       <br /><br />
-    <input type="text" name="username" placeholder="Username" runat ="server"/>
+    <input type="text" name="username" placeholder="Username" runat ="server" id ="Username"/>
        <label>Email:</label>
       <br /><br />
-    <input type="password" name="password" placeholder="Password" runat ="server"/>
+    <input type="password" name="password" placeholder="Password" runat ="server" id ="Password"/>
        <label>Retype Password:</label>
       <br /><br />
-    <input type="password" name="password2" placeholder="Retype password" runat ="server"/>
+    <input type="password" name="password2" placeholder="Retype password" runat ="server" id ="Password2"/>
 
      <!--This submit button must redirect them to the producst page-->
-    <input type="submit" name="register_submit" value="Register" />
+    <input runat= "server" id="register"  type= "submit" name="register_submit" value="Register" onclick="Register_Click"/>
+
       </div>
 
       <div class="right">
-     <label>Address:</label>
+     <label>Email:</label>
       <br /><br />
-        <input type="text" name="email" placeholder="E-mail" runat ="server"/>
-       <label>Password:</label>
+        <input type="text" name="email" placeholder="E-mail" runat ="server" id ="Email"/>
+       <label>Address:</label>
       <br /><br />
-    <input type="text" name="address" placeholder="Adress" runat ="server"/>
+    <input type="text" name="address" placeholder="Adress" runat ="server" id ="Address"/>
      <label>Cellphone number:</label>
       <br /><br />
-    <input type="text" name="Cellphone number" placeholder="Cellphone number" runat ="server"/>
+    <input type="text" name="Cellphone number" placeholder="Cellphone number" runat ="server" id ="Cellphone"/>
 </div>    
 
 <br />
@@ -76,5 +77,8 @@
 <br />
 <br />
 </div>
-        </div>
+</div>
+</div>
+</div>
+</div>
 </asp:Content>

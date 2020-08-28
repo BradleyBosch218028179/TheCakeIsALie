@@ -1,0 +1,58 @@
+The Game database should have the following:
+***************************************************
+
+ID INT IDENTITY(1,1)
+Title VARCHAR (eg: Battlefields)
+Type VARCHAR  (eg: Strategy)
+Description VARCHAR
+Rating INT (1-5)
+Price MONEY
+Quantity INT
+Trailer VARCHAR (css/images/trailer.mp4)
+Image VARCHAR (css/image/battlefield.png) -- > This you will find in the images folder
+Special INT (1 indicates it is on special and 0 indicates it is not on special)
+Status INT (1 means the products active, 0 means the products been "deleted" by the admin
+Comments INT (5)
+User_ID INT FK
+
+So user will have the 1 and the game will have the many
+
+The user database should have the following:
+***************************************************
+ID INT IDENTITY(1,1)
+UserName VARCHAR
+Password VARCHAR
+Password2 VARCHAR
+Email VARCHAR
+Address VARCHAR
+Cellphone VARCHAR
+
+The Game pricing database should have the following:
+**********************************************************
+
+ID INT IDENTITY(1,1)
+Special INT (IF 1 it is on special, if 0 not on special)
+Price MONEY 
+Discounted_Price MONEY
+Product_ID FK
+
+So the product pricing will have the 1 and the product pricing will have the many
+
+Then we will need a database for shopping cart:
+************************************************
+
+ID INT (This is the user ID)
+Product_ID INT
+Quantity INT
+
+Then we will need a database for invoice:
+************************************************
+ID INT (This is the user ID)
+Product_ID INT
+Quantity INT
+FK to products so that the quantity can be changed
+
+//These are suggestions of how it should be set up. Feel free to ask me anything or to change the databases
+
+
+

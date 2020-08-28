@@ -8,14 +8,13 @@ General Css page
 body {
 	margin: 0;
 	padding: 0;
-	line-height: 1.5em;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #857a40;
 	background-size: cover;
 	background: #000;
 }
 
-a:link, a:visited { color: #f1d72b; text-decoration: none; font-weight: normal;} 
+a:link, a:visited { color: #f1d72b; text-decoration: none; font-weight: normal;font-size: 18px;} 
 a:active, a:hover { color: #f1d72b; text-decoration: underline;}
 
 
@@ -31,6 +30,7 @@ img {
 	margin: 0px;
 	padding: 0px;
 	border: none;
+	height:100%;
 }
 
 .cleaner { clear: both; width: 100%; height: 1px; font-size: 1px;  }
@@ -49,15 +49,14 @@ img {
 	margin: 0 auto;
 	color: #ffffff;
 	position: fixed;
-	background: url(images/templatemo_menu_bg_repeat.gif) repeat-x;
+	background: url(css/images/templatemo_menu_bg_repeat.gif) repeat-x;
 }
 
 	#templatemo_menu_wrapper #templatemo_menu_panel {
 		width: 990px;
 		height: 51px;
-		margin: 0 135px;
-		padding: 0 100px;
 		position: fixed;
+                padding: 0px 300px;
 	}
 
 #templatemo_menu_panel ul {
@@ -83,7 +82,7 @@ img {
 	}
 
 #templatemo_menu_panel li a:hover, #templatemo_menu_panel li .current {
-	background: url(images/menu_hover.png) bottom center no-repeat;
+	background: url(css/images/menu_hover.png) bottom center no-repeat;
 	color: #fff;
 }
 
@@ -108,17 +107,17 @@ img {
 		justify-content: center;
 		margin: 0 auto;
 		width:60%;
-		background: url(images/Login.jpg) no-repeat;
+		background: url(css/images/Login.jpg) no-repeat;
 		background-size: cover;
 		position: center;
 	}
 
 #templatemo_header_panel .templatemo_header {
 	float: left;
-	margin: 30px 365px 0 0;
+	margin: 30px 550px 0 0;
 	width: 400px;
 	height: 300px;
-	background: url(images/BigAlpha2.0.png) top left no-repeat;
+	background: url(css/images/BigAlpha2.0.png) top left no-repeat;
 	background-size: contain;
 }
 
@@ -170,14 +169,12 @@ img {
 	height: 30px;
 	line-height: normal;
 	padding: 4px;
-	width: 200px;
-	margin: 130px 0 0;
-	margin-left: -150px;
+	margin: 130px 20px 850px 540px;
 }
 
 
 #searchbutton{
-	background: url(images/templatemo_search_button.jpg); 
+	background: url(css/images/templatemo_search_button.jpg); 
 	border: none;
 	cursor: pointer;
 	font-size: 12px;
@@ -219,7 +216,7 @@ img {
 	bottom: 0px;
 	left: 0px;
 	margin:0 auto;
-	background: url(images/templatemo_content_bottom.gif) no-repeat;	
+	
 }
 
 #templatemo_content {
@@ -310,7 +307,7 @@ ads_250_250
 	font-size: 25px;
 	padding: 0 30px;
 	width: 260px;
-	background: url(images/templatemo_vertical_divider.gif) left repeat-y;
+	background: url(css/images/templatemo_vertical_divider.gif) left repeat-y;
 }
 
 #content_right .content_right_titile_01 {

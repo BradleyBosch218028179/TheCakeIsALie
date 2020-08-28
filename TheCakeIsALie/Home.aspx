@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div id="templatemo_content_panel">
+   <div id="templatemo_content_panel">
         <div id="templatemo_content_wrapper">
 
             <div id="templatemo_content">
@@ -22,15 +22,15 @@
 
                             <!--Create a image slider-->
                             <div class="post_content">
-                                <img class="display" src="images/csgo.jfif" style="width: 100%"/>
-                                <img class="display" src="images/angrybirds.jfif" style="width: 100%"/>
-                                <img class="display" src="images/minecraft.jpg" style="width: 100%"/>
-                                <img class="display" src="images/dbd.jpg" style="width: 100%" />
-                                 <img class="display" src="images/fortnite.jpg" style="width: 100%"/>
-                                 <img class="display" src="images/pubg.jpg" style="width: 100%"/>
-                                <img class="display" src="images/cod.jpg" style="width: 100%"/>
-                                <img class="display" src="images/rocketleague.jpg" style="width: 100%"/>
-                                <img class="display" src="images/wow.jpg" style="width: 100%"/>
+                                <img class="display" src="css/images/csgo.jfif" style="width: 100%"/>
+                                <img class="display" src="css/images/angrybirds.jfif" style="width: 100%"/>
+                                <img class="display" src="css/images/minecraft.jpg" style="width: 100%"/>
+                                <img class="display" src="css/images/dbd.jpg" style="width: 100%" />
+                                 <img class="display" src="css/images/fortnite.jpg" style="width: 100%"/>
+                                 <img class="display" src="css/images/pubg.jpg" style="width: 100%"/>
+                                <img class="display" src="css/images/cod.jpg" style="width: 100%"/>
+                                <img class="display" src="css/images/rocketleague.jpg" style="width: 100%"/>
+                                <img class="display" src="css/images/wow.jpg" style="width: 100%"/>
                             </div>
 
                             <script>
@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="post_content">
-                            <img src="images/specials.jpg" alt="image 2" />
+                            <img src="css/images/specials.jpg" alt="image 2" />
                             <p style="font-size: 20px">Our specials range from R100 to R50. it includes strategy, fantasy, mmorpg, fps, racing, shooting, idle, XBox, indie, platform, Playstation and more!</p>
                             <div class="link_button"><a href="#">Continue reading...</a></div>
                         </div>
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="post_content">
-                            <img src="images/gamers.jpg" alt="image 3" />
+                            <img src="css/images/gamers.jpg" alt="image 3" />
                             <p>
                                 <p style="font-size: 20px">Subscribe to get the latest news about new game releases before your friends and get valuable tips on how to compete more effectively</p>
                             </p>
