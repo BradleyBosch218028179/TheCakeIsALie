@@ -27,7 +27,7 @@
     <label>Username:</label>
       <br /><br />
     <input type="text" name="username" placeholder="Username" runat ="server" id ="Username"/>
-       <label>Email:</label>
+       <label>Password:</label>
       <br /><br />
     <input type="password" name="password" placeholder="Password" runat ="server" id ="Password"/>
        <label>Retype Password:</label>
@@ -35,8 +35,7 @@
     <input type="password" name="password2" placeholder="Retype password" runat ="server" id ="Password2"/>
 
      <!--This submit button must redirect them to the producst page-->
-    <input runat= "server" id="register"  type= "submit" name="register_submit" value="Register" onclick="Register_Click"/>
-
+      <input runat="server" id="register" type="submit" name="register_submit" value="Register" onclick="Register_Click" />
       </div>
 
       <div class="right">
