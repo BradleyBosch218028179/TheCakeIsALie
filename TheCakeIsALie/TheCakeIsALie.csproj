@@ -70,24 +70,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Add_Game.aspx" />
+    <Content Include="AdminPage.aspx" />
+    <None Include="Connected Services\ServiceReference1\Game_Service.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
-    <None Include="Connected Services\ServiceReference1\Game_Service.wsdl" />
-    <None Include="Connected Services\ServiceReference1\Game_Service.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference1\Game_Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiceReference1\Game_Service2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\ServiceReference1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\ServiceReference1\Game_Service.disco" />
-    <Content Include="AdminPage.aspx" />
     <Content Include="Delete_Game.aspx" />
     <Content Include="Edit_Details.aspx" />
     <Content Include="Edit_Game.aspx" />
@@ -409,6 +399,16 @@
     <Content Include="obj\Debug\TheCakeIsALie.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\TheCakeIsALie.csprojAssemblyReference.cache" />
     <Content Include="FrontEnd.Master" />
+    <None Include="Connected Services\ServiceReference1\Game_Service.wsdl" />
+    <None Include="Connected Services\ServiceReference1\Game_Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Game_Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\Game_Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Connected Services\ServiceReference1\TheCakeIsALie.ServiceReference1.Game.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>

@@ -16,7 +16,6 @@
                         <div class="post_header">
                             <div class="post_title_info">
                                 <div class="post_title">Popular and Recommended games</div>
-                                </br>
                             </div>
                         </div>
 
