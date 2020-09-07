@@ -18,7 +18,7 @@
                                 <div style="float: left" class="post_title">Sign in Gamer</div>
                                 </br>
 <div id="login-box">
-  <div class="left">
+  <form runat="server" class="left">
    
       <!--All the back end needs to be done for the username, email, passwords-->
 
@@ -35,22 +35,24 @@
       <br /><br />
     <input type="password" name="password2" placeholder="Retype password" runat ="server" id ="Password2"/>
     
+    <asp:Label ID="error" style="font-size:22px;color:red;font-weight:900;"  runat="server" Text="Incorrect Password or Username" visible="false"/>
+    <br />
       <!--This submit button must redirect them to the producst page-->
-    <input runat="server" id="signin" type="submit" name="signup_submit" value="Sign In" onclick="Signin_Click" />
-
-  </div>
+    <asp:Button runat="server"  id="signin2" type="submit" name="signup_submit" Text="Sign In" onclick="Signin_Click" />
+  </form>
   
   <div class="right">
     
      <span class="loginwith">Sign in with social network:</span>
 
-    <button class="social-signin facebook">Log in with facebook</button>
+    <button runat="server" class="social-signin facebook">Log in with facebook</button>
     <button class="social-signin twitter">Log in with Twitter</button>
     <button class="social-signin google">Log in with Google+</button>
   </div>
   <div class="or">OR</div>
 </div>
 <br />
+ 
 <br />
 <br />
 <br />

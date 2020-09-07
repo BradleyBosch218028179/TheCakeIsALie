@@ -8,21 +8,21 @@
  
   <link rel="stylesheet" type = "text/css" href = "css/One_product.css"/>
 
-  <!-- Left Column / game Image -->
+  <%--<!-- Left Column / game Image -->--%>
   <div class="left-column">
     <img src="css/images/battlefield.jpg" alt=""/>
   </div>
  
  
   <!-- Right Column -->
-  <div class="right-column">
+  <div class="right-column" runat="server">
  
     <!-- Product Description -->
       <!-- For database it will be a VARCHAR-->
     <div class="product-description">
-      <span>Strategy Game</span>
-      <h1>Battlefield 3 End Game</h1>
-      <p>The preferred choice of a vast range of adventures and a lot of combat </p>
+      <span id="type" runat="server"></span>
+      <h1 id="title" runat="server"></h1>
+      <p id="descrp" runat="server"> </p>
     </div>
  
       <!-- For database it will be a VARCHAR-->
@@ -31,6 +31,7 @@
       </div>
       <br />
       <br />
+      
 
   <!-- For database it will be a INT-->
     <label>Number Of Copies:</label>
@@ -41,10 +42,16 @@
 
       <!-- For database it will be a MONEY-->
       <!-- Product Pricing -->
+<form runat="server">
     <div class="product-price">
-      <span>R 200</span>
-      <a href="#" class="cart-btn">ADD TO CART</a>
+      <span id="price" runat="server">R 200</span>
+      <asp:Button runat="server" ID="btnCart" Text="Add To Cart"/> 
+     <asp:Button runat="server" ID="btnPurchase" Text="Purchase Game"/>
+       <asp:Button runat="server" ID="btnBack" Text="Search more games"/>
     </div>
+    </form>
+      
+
 
     </div>
 </main>

@@ -47,8 +47,10 @@ Quantity INT
 
 Then we will need a database for invoice:
 ************************************************
+Invoice_ID PK IDENTITY(!,!)
 ID INT (This is the user ID)
 Product_ID INT
+Price MONEY
 Quantity INT
 FK to products so that the quantity can be changed
 

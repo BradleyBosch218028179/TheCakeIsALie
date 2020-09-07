@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Edit_Game.aspx.cs" Inherits="TheCakeIsALie.Edit_Game"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontEnd.Master" AutoEventWireup="true" CodeBehind="Edit_Game.aspx.cs" Inherits="TheCakeIsALie.Edit_Game" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <link rel="stylesheet" type = "text/css" href = "css/Register.css"/>
+     <link rel="stylesheet" type = "text/css" href = "css/Register.css"/>
      <div id="templatemo_content_panel">
         <div id="templatemo_content_wrapper">
 
@@ -18,7 +19,7 @@
                                 <div style="float: left" class="post_title">Edit Game</div>
                                 </br>
                                 <br />
-   
+   <form runat="server">
   <div class="left">
    
       <!--All the back end needs to be done for the editing a product.-->
@@ -48,8 +49,16 @@
       <br /><br />
     <input type="number" name="quantity" placeholder="Qunatity" runat ="server" id ="Quantity"/>
 
+      <!-- For database it will be a INT-->
+    <label>Game Status:</label>
+      <br /><br />
+      <asp:RadioButtonList ID="rbtnStatusList" runat="server">
+              <asp:ListItem Selected="True">Active</asp:ListItem>
+              <asp:ListItem>Not Active</asp:ListItem>
+          </asp:RadioButtonList>
+
    <!--This submit button must redirect them to the product page-->
-    <input runat="server" id="edit" type="submit" name="Edit_submit" value="Edit Game" onclick="Add_Click" />
+    <asp:Button runat="server" id="Edit" type="submit" name="Edit_submit" Text="Edit Game" onclick="Edit_Click" />
       </div>
 
       <div class="right">
@@ -72,15 +81,30 @@
           
     <!-- For database it will be a INT -> 0 for not a special and 1 for a sepecial-->
     <label>On special:</label>
-      <br /><br />
-    <input type="number" name="special" placeholder="Special" runat ="server" id ="special"/>
-
+          <br />
+      <br />
+          <asp:RadioButtonList ID="rbtnSpecial" runat="server" OnSelectedIndexChanged="rbtnSpecial_SelectedIndexChanged" AutoPostBack="True">
+              <asp:ListItem Selected="True">Yes</asp:ListItem>
+              <asp:ListItem>No</asp:ListItem>
+          </asp:RadioButtonList>
+          
+       <br />
+       <br />
+   <!-- For database it will be a INT-->
+          <div runat="server" id="DicsountLayout">
+            <label>Discount:</label>
+                  <br /><br />
+                <input type="number" name="Discount" placeholder="Game Discount" runat ="server" id ="Discount" />
+          </div>
+    
    <!-- For database it will be a INT-->
     <label>Number Of Comments:</label>
       <br /><br />
     <input type="number" name="comments" placeholder="Number Of Comments" runat ="server" id ="comments"/>
 
+    <asp:Label ID="error" style="font-size:22px;color:red;font-weight:900;"  runat="server" Text="" visible="false"/>
 </div>    
+       </form>
 
 <br />
 <br />
@@ -112,4 +136,6 @@
 </div>
 </div>
 </div>
+</div>
+     </div>
 </asp:Content>

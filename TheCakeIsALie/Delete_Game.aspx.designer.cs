@@ -15,13 +15,13 @@ namespace TheCakeIsALie
     {
 
         /// <summary>
-        /// Delete_ID control.
+        /// Delete_Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Delete_ID;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Delete_Title;
 
         /// <summary>
         /// delete control.
@@ -30,6 +30,6 @@ namespace TheCakeIsALie
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit delete;
+        protected global::System.Web.UI.WebControls.Button delete;
     }
 }

@@ -9,66 +9,952 @@
 //------------------------------------------------------------------------------
 
 namespace TheCakeIsALie.ServiceReference1 {
+    using System.Runtime.Serialization;
+    using System;
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
-    public interface IService1 {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="http://schemas.datacontract.org/2004/07/Project_Service")]
+    [System.SerializableAttribute()]
+    public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Register", ReplyAction="http://tempuri.org/IService1/RegisterResponse")]
-        int Register(string username, string password, string email, string address, string cell);
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Register", ReplyAction="http://tempuri.org/IService1/RegisterResponse")]
-        System.Threading.Tasks.Task<int> RegisterAsync(string username, string password, string email, string address, string cell);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.Game[] GamesField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
-        int Login(string username, string password);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.Invoice[] InvoicesField;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Login", ReplyAction="http://tempuri.org/IService1/LoginResponse")]
-        System.Threading.Tasks.Task<int> LoginAsync(string username, string password);
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string USer_TypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_AddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_CellphoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string User_SurnameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.Game[] Games {
+            get {
+                return this.GamesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GamesField, value) != true)) {
+                    this.GamesField = value;
+                    this.RaisePropertyChanged("Games");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.Invoice[] Invoices {
+            get {
+                return this.InvoicesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.InvoicesField, value) != true)) {
+                    this.InvoicesField = value;
+                    this.RaisePropertyChanged("Invoices");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string USer_Type {
+            get {
+                return this.USer_TypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.USer_TypeField, value) != true)) {
+                    this.USer_TypeField = value;
+                    this.RaisePropertyChanged("USer_Type");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_Address {
+            get {
+                return this.User_AddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_AddressField, value) != true)) {
+                    this.User_AddressField = value;
+                    this.RaisePropertyChanged("User_Address");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_Cellphone {
+            get {
+                return this.User_CellphoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_CellphoneField, value) != true)) {
+                    this.User_CellphoneField = value;
+                    this.RaisePropertyChanged("User_Cellphone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_Email {
+            get {
+                return this.User_EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_EmailField, value) != true)) {
+                    this.User_EmailField = value;
+                    this.RaisePropertyChanged("User_Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_FirstName {
+            get {
+                return this.User_FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_FirstNameField, value) != true)) {
+                    this.User_FirstNameField = value;
+                    this.RaisePropertyChanged("User_FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_ID {
+            get {
+                return this.User_IDField;
+            }
+            set {
+                if ((this.User_IDField.Equals(value) != true)) {
+                    this.User_IDField = value;
+                    this.RaisePropertyChanged("User_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_Name {
+            get {
+                return this.User_NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_NameField, value) != true)) {
+                    this.User_NameField = value;
+                    this.RaisePropertyChanged("User_Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_Password {
+            get {
+                return this.User_PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_PasswordField, value) != true)) {
+                    this.User_PasswordField = value;
+                    this.RaisePropertyChanged("User_Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string User_Surname {
+            get {
+                return this.User_SurnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.User_SurnameField, value) != true)) {
+                    this.User_SurnameField = value;
+                    this.RaisePropertyChanged("User_Surname");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Game", Namespace="http://schemas.datacontract.org/2004/07/Project_Service")]
+    [System.SerializableAttribute()]
+    public partial class Game : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal Discount_PercentageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime Game_Date_AddedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Game_DescrpField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Game_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Game_ImageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Game_Num_CommentsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Game_QuantityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Game_RatingField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Game_StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Game_TitleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Game_TrailerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Game_TypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal Game_priceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.Inv_Game[] Inv_GamesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.User UserField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Discount_Percentage {
+            get {
+                return this.Discount_PercentageField;
+            }
+            set {
+                if ((this.Discount_PercentageField.Equals(value) != true)) {
+                    this.Discount_PercentageField = value;
+                    this.RaisePropertyChanged("Discount_Percentage");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Game_Date_Added {
+            get {
+                return this.Game_Date_AddedField;
+            }
+            set {
+                if ((this.Game_Date_AddedField.Equals(value) != true)) {
+                    this.Game_Date_AddedField = value;
+                    this.RaisePropertyChanged("Game_Date_Added");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Game_Descrp {
+            get {
+                return this.Game_DescrpField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Game_DescrpField, value) != true)) {
+                    this.Game_DescrpField = value;
+                    this.RaisePropertyChanged("Game_Descrp");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Game_Id {
+            get {
+                return this.Game_IdField;
+            }
+            set {
+                if ((this.Game_IdField.Equals(value) != true)) {
+                    this.Game_IdField = value;
+                    this.RaisePropertyChanged("Game_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Game_Image {
+            get {
+                return this.Game_ImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Game_ImageField, value) != true)) {
+                    this.Game_ImageField = value;
+                    this.RaisePropertyChanged("Game_Image");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Game_Num_Comments {
+            get {
+                return this.Game_Num_CommentsField;
+            }
+            set {
+                if ((this.Game_Num_CommentsField.Equals(value) != true)) {
+                    this.Game_Num_CommentsField = value;
+                    this.RaisePropertyChanged("Game_Num_Comments");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Game_Quantity {
+            get {
+                return this.Game_QuantityField;
+            }
+            set {
+                if ((this.Game_QuantityField.Equals(value) != true)) {
+                    this.Game_QuantityField = value;
+                    this.RaisePropertyChanged("Game_Quantity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Game_Rating {
+            get {
+                return this.Game_RatingField;
+            }
+            set {
+                if ((this.Game_RatingField.Equals(value) != true)) {
+                    this.Game_RatingField = value;
+                    this.RaisePropertyChanged("Game_Rating");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Game_Status {
+            get {
+                return this.Game_StatusField;
+            }
+            set {
+                if ((this.Game_StatusField.Equals(value) != true)) {
+                    this.Game_StatusField = value;
+                    this.RaisePropertyChanged("Game_Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Game_Title {
+            get {
+                return this.Game_TitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Game_TitleField, value) != true)) {
+                    this.Game_TitleField = value;
+                    this.RaisePropertyChanged("Game_Title");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Game_Trailer {
+            get {
+                return this.Game_TrailerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Game_TrailerField, value) != true)) {
+                    this.Game_TrailerField = value;
+                    this.RaisePropertyChanged("Game_Trailer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Game_Type {
+            get {
+                return this.Game_TypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Game_TypeField, value) != true)) {
+                    this.Game_TypeField = value;
+                    this.RaisePropertyChanged("Game_Type");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Game_price {
+            get {
+                return this.Game_priceField;
+            }
+            set {
+                if ((this.Game_priceField.Equals(value) != true)) {
+                    this.Game_priceField = value;
+                    this.RaisePropertyChanged("Game_price");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.Inv_Game[] Inv_Games {
+            get {
+                return this.Inv_GamesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Inv_GamesField, value) != true)) {
+                    this.Inv_GamesField = value;
+                    this.RaisePropertyChanged("Inv_Games");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.User User {
+            get {
+                return this.UserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserField, value) != true)) {
+                    this.UserField = value;
+                    this.RaisePropertyChanged("User");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_ID {
+            get {
+                return this.User_IDField;
+            }
+            set {
+                if ((this.User_IDField.Equals(value) != true)) {
+                    this.User_IDField = value;
+                    this.RaisePropertyChanged("User_ID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Invoice", Namespace="http://schemas.datacontract.org/2004/07/Project_Service")]
+    [System.SerializableAttribute()]
+    public partial class Invoice : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime Date_LoggedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.Inv_Game[] Inv_GamesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Inv_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Shopping_StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal Total_CostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.User UserField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date_Logged {
+            get {
+                return this.Date_LoggedField;
+            }
+            set {
+                if ((this.Date_LoggedField.Equals(value) != true)) {
+                    this.Date_LoggedField = value;
+                    this.RaisePropertyChanged("Date_Logged");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.Inv_Game[] Inv_Games {
+            get {
+                return this.Inv_GamesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Inv_GamesField, value) != true)) {
+                    this.Inv_GamesField = value;
+                    this.RaisePropertyChanged("Inv_Games");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Inv_Id {
+            get {
+                return this.Inv_IdField;
+            }
+            set {
+                if ((this.Inv_IdField.Equals(value) != true)) {
+                    this.Inv_IdField = value;
+                    this.RaisePropertyChanged("Inv_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Shopping_Status {
+            get {
+                return this.Shopping_StatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Shopping_StatusField, value) != true)) {
+                    this.Shopping_StatusField = value;
+                    this.RaisePropertyChanged("Shopping_Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Total_Cost {
+            get {
+                return this.Total_CostField;
+            }
+            set {
+                if ((this.Total_CostField.Equals(value) != true)) {
+                    this.Total_CostField = value;
+                    this.RaisePropertyChanged("Total_Cost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.User User {
+            get {
+                return this.UserField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserField, value) != true)) {
+                    this.UserField = value;
+                    this.RaisePropertyChanged("User");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_ID {
+            get {
+                return this.User_IDField;
+            }
+            set {
+                if ((this.User_IDField.Equals(value) != true)) {
+                    this.User_IDField = value;
+                    this.RaisePropertyChanged("User_ID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Inv_Game", Namespace="http://schemas.datacontract.org/2004/07/Project_Service")]
+    [System.SerializableAttribute()]
+    public partial class Inv_Game : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal CostField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.Game GameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Game_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Inv_Game_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Inv_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private TheCakeIsALie.ServiceReference1.Invoice InvoiceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuantityField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Cost {
+            get {
+                return this.CostField;
+            }
+            set {
+                if ((this.CostField.Equals(value) != true)) {
+                    this.CostField = value;
+                    this.RaisePropertyChanged("Cost");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.Game Game {
+            get {
+                return this.GameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GameField, value) != true)) {
+                    this.GameField = value;
+                    this.RaisePropertyChanged("Game");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Game_Id {
+            get {
+                return this.Game_IdField;
+            }
+            set {
+                if ((this.Game_IdField.Equals(value) != true)) {
+                    this.Game_IdField = value;
+                    this.RaisePropertyChanged("Game_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Inv_Game_Id {
+            get {
+                return this.Inv_Game_IdField;
+            }
+            set {
+                if ((this.Inv_Game_IdField.Equals(value) != true)) {
+                    this.Inv_Game_IdField = value;
+                    this.RaisePropertyChanged("Inv_Game_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Inv_Id {
+            get {
+                return this.Inv_IdField;
+            }
+            set {
+                if ((this.Inv_IdField.Equals(value) != true)) {
+                    this.Inv_IdField = value;
+                    this.RaisePropertyChanged("Inv_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public TheCakeIsALie.ServiceReference1.Invoice Invoice {
+            get {
+                return this.InvoiceField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.InvoiceField, value) != true)) {
+                    this.InvoiceField = value;
+                    this.RaisePropertyChanged("Invoice");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Quantity {
+            get {
+                return this.QuantityField;
+            }
+            set {
+                if ((this.QuantityField.Equals(value) != true)) {
+                    this.QuantityField = value;
+                    this.RaisePropertyChanged("Quantity");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : TheCakeIsALie.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IGame_Service")]
+    public interface IGame_Service {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/login", ReplyAction="http://tempuri.org/IGame_Service/loginResponse")]
+        int login(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/login", ReplyAction="http://tempuri.org/IGame_Service/loginResponse")]
+        System.Threading.Tasks.Task<int> loginAsync(string email, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/Register", ReplyAction="http://tempuri.org/IGame_Service/RegisterResponse")]
+        int Register(string firstname, string surname, string email, string password, string usertype, string username, string cellphone, string address);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/Register", ReplyAction="http://tempuri.org/IGame_Service/RegisterResponse")]
+        System.Threading.Tasks.Task<int> RegisterAsync(string firstname, string surname, string email, string password, string usertype, string username, string cellphone, string address);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/UpdateUser", ReplyAction="http://tempuri.org/IGame_Service/UpdateUserResponse")]
+        int UpdateUser(TheCakeIsALie.ServiceReference1.User user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/UpdateUser", ReplyAction="http://tempuri.org/IGame_Service/UpdateUserResponse")]
+        System.Threading.Tasks.Task<int> UpdateUserAsync(TheCakeIsALie.ServiceReference1.User user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/getAllGames", ReplyAction="http://tempuri.org/IGame_Service/getAllGamesResponse")]
+        TheCakeIsALie.ServiceReference1.Game[] getAllGames();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/getAllGames", ReplyAction="http://tempuri.org/IGame_Service/getAllGamesResponse")]
+        System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.Game[]> getAllGamesAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/AddGame", ReplyAction="http://tempuri.org/IGame_Service/AddGameResponse")]
+        int AddGame(string title, string type, string descrption, short special, int rating, int quantity, int num_Comments, decimal price, decimal discountedPrice, string game_image, string game_trailer, int user_ID, int status);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/AddGame", ReplyAction="http://tempuri.org/IGame_Service/AddGameResponse")]
+        System.Threading.Tasks.Task<int> AddGameAsync(string title, string type, string descrption, short special, int rating, int quantity, int num_Comments, decimal price, decimal discountedPrice, string game_image, string game_trailer, int user_ID, int status);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/EditGame", ReplyAction="http://tempuri.org/IGame_Service/EditGameResponse")]
+        int EditGame(TheCakeIsALie.ServiceReference1.Game game);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/EditGame", ReplyAction="http://tempuri.org/IGame_Service/EditGameResponse")]
+        System.Threading.Tasks.Task<int> EditGameAsync(TheCakeIsALie.ServiceReference1.Game game);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/RemoveGame", ReplyAction="http://tempuri.org/IGame_Service/RemoveGameResponse")]
+        int RemoveGame(string Game_Title);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/RemoveGame", ReplyAction="http://tempuri.org/IGame_Service/RemoveGameResponse")]
+        System.Threading.Tasks.Task<int> RemoveGameAsync(string Game_Title);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/getUser", ReplyAction="http://tempuri.org/IGame_Service/getUserResponse")]
+        TheCakeIsALie.ServiceReference1.User getUser(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/getUser", ReplyAction="http://tempuri.org/IGame_Service/getUserResponse")]
+        System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.User> getUserAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/getRecentGame", ReplyAction="http://tempuri.org/IGame_Service/getRecentGameResponse")]
+        TheCakeIsALie.ServiceReference1.Game[] getRecentGame();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/getRecentGame", ReplyAction="http://tempuri.org/IGame_Service/getRecentGameResponse")]
+        System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.Game[]> getRecentGameAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/GetOneGame", ReplyAction="http://tempuri.org/IGame_Service/GetOneGameResponse")]
+        TheCakeIsALie.ServiceReference1.Game GetOneGame(int ID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGame_Service/GetOneGame", ReplyAction="http://tempuri.org/IGame_Service/GetOneGameResponse")]
+        System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.Game> GetOneGameAsync(int ID);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IGame_ServiceChannel : TheCakeIsALie.ServiceReference1.IGame_Service, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<TheCakeIsALie.ServiceReference1.IService1>, TheCakeIsALie.ServiceReference1.IService1 {
+    public partial class Game_ServiceClient : System.ServiceModel.ClientBase<TheCakeIsALie.ServiceReference1.IGame_Service>, TheCakeIsALie.ServiceReference1.IGame_Service {
         
-        public Service1Client() {
+        public Game_ServiceClient() {
         }
         
-        public Service1Client(string endpointConfigurationName) : 
+        public Game_ServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+        public Game_ServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Game_ServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Game_ServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public int Register(string username, string password, string email, string address, string cell) {
-            return base.Channel.Register(username, password, email, address, cell);
+        public int login(string email, string password) {
+            return base.Channel.login(email, password);
         }
         
-        public System.Threading.Tasks.Task<int> RegisterAsync(string username, string password, string email, string address, string cell) {
-            return base.Channel.RegisterAsync(username, password, email, address, cell);
+        public System.Threading.Tasks.Task<int> loginAsync(string email, string password) {
+            return base.Channel.loginAsync(email, password);
         }
         
-        public int Login(string username, string password) {
-            return base.Channel.Login(username, password);
+        public int Register(string firstname, string surname, string email, string password, string usertype, string username, string cellphone, string address) {
+            return base.Channel.Register(firstname, surname, email, password, usertype, username, cellphone, address);
         }
         
-        public System.Threading.Tasks.Task<int> LoginAsync(string username, string password) {
-            return base.Channel.LoginAsync(username, password);
+        public System.Threading.Tasks.Task<int> RegisterAsync(string firstname, string surname, string email, string password, string usertype, string username, string cellphone, string address) {
+            return base.Channel.RegisterAsync(firstname, surname, email, password, usertype, username, cellphone, address);
+        }
+        
+        public int UpdateUser(TheCakeIsALie.ServiceReference1.User user) {
+            return base.Channel.UpdateUser(user);
+        }
+        
+        public System.Threading.Tasks.Task<int> UpdateUserAsync(TheCakeIsALie.ServiceReference1.User user) {
+            return base.Channel.UpdateUserAsync(user);
+        }
+        
+        public TheCakeIsALie.ServiceReference1.Game[] getAllGames() {
+            return base.Channel.getAllGames();
+        }
+        
+        public System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.Game[]> getAllGamesAsync() {
+            return base.Channel.getAllGamesAsync();
+        }
+        
+        public int AddGame(string title, string type, string descrption, short special, int rating, int quantity, int num_Comments, decimal price, decimal discountedPrice, string game_image, string game_trailer, int user_ID, int status) {
+            return base.Channel.AddGame(title, type, descrption, special, rating, quantity, num_Comments, price, discountedPrice, game_image, game_trailer, user_ID, status);
+        }
+        
+        public System.Threading.Tasks.Task<int> AddGameAsync(string title, string type, string descrption, short special, int rating, int quantity, int num_Comments, decimal price, decimal discountedPrice, string game_image, string game_trailer, int user_ID, int status) {
+            return base.Channel.AddGameAsync(title, type, descrption, special, rating, quantity, num_Comments, price, discountedPrice, game_image, game_trailer, user_ID, status);
+        }
+        
+        public int EditGame(TheCakeIsALie.ServiceReference1.Game game) {
+            return base.Channel.EditGame(game);
+        }
+        
+        public System.Threading.Tasks.Task<int> EditGameAsync(TheCakeIsALie.ServiceReference1.Game game) {
+            return base.Channel.EditGameAsync(game);
+        }
+        
+        public int RemoveGame(string Game_Title) {
+            return base.Channel.RemoveGame(Game_Title);
+        }
+        
+        public System.Threading.Tasks.Task<int> RemoveGameAsync(string Game_Title) {
+            return base.Channel.RemoveGameAsync(Game_Title);
+        }
+        
+        public TheCakeIsALie.ServiceReference1.User getUser(int id) {
+            return base.Channel.getUser(id);
+        }
+        
+        public System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.User> getUserAsync(int id) {
+            return base.Channel.getUserAsync(id);
+        }
+        
+        public TheCakeIsALie.ServiceReference1.Game[] getRecentGame() {
+            return base.Channel.getRecentGame();
+        }
+        
+        public System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.Game[]> getRecentGameAsync() {
+            return base.Channel.getRecentGameAsync();
+        }
+        
+        public TheCakeIsALie.ServiceReference1.Game GetOneGame(int ID) {
+            return base.Channel.GetOneGame(ID);
+        }
+        
+        public System.Threading.Tasks.Task<TheCakeIsALie.ServiceReference1.Game> GetOneGameAsync(int ID) {
+            return base.Channel.GetOneGameAsync(ID);
         }
     }
 }

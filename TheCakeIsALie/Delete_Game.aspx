@@ -19,19 +19,21 @@
                                 </br>
                                 <br />
    
-  <div class="left">
+  <form runat="server" class="left">
    
       <!--All the back end needs to be done for the deleting a product.-->
 
        <!-- For database it will be a INT and the field will be status-->
       <!-- If status is 1 then it is active, if status is 0 it is "Deleted"-->
 
-    <label>ID of Game to delete:</label>
+      Title<label> of Game to delete:</label>
       <br /><br />
 
       <!--This submit button must redirect them to the product page-->
-    <input type="text" name="Description" placeholder="ID of game to delete" runat ="server" id ="Delete_ID"/>
+    <input type="text" name="Delete_Title" placeholder="Title of game to delete" runat ="server" id ="Delete_Title"/>
      <!--This submit button must redirect them to the producst page-->
-    <input runat="server" id="delete" type="submit" name="Delete_submit" value="Delete Game" onclick="Delete_Click" />
-      </div>
+    <asp:Button runat="server" id="delete" type="submit" name="Delete_submit" Text="Delete Game" onclick="Delete_Click" />
+      </form>
+</div>
+    </div>
 </asp:Content>

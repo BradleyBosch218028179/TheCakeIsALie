@@ -51,12 +51,21 @@ namespace TheCakeIsALie
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password2;
 
         /// <summary>
-        /// signin control.
+        /// error control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit signin;
+        protected global::System.Web.UI.WebControls.Label error;
+
+        /// <summary>
+        /// signin2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button signin2;
     }
 }

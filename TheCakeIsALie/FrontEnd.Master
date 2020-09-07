@@ -4,79 +4,86 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-<title>Alpha</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <title>Alpha</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-<div id="templatemo_menu_wrapper">
-    <div id="templatemo_menu_panel">
-        <ul>
-            <li><a href="Home.aspx" class="current">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="SignIn.aspx">Sign in</a></li>
-            <li><a href="Register.aspx">Register</a></li>
-            <li><a href="Games_Page.aspx">Buy</a></li>
-            <li><a href="#">Specials</a></li>
-            <li><a href="#" class="last">Profile</a></li>
-            <li><a href="#" class="last">Contact us</a></li>
-        </ul> 
+    <div id="templatemo_menu_wrapper" style="z-index:99">
+        <div id="templatemo_menu_panel">
+            <ul>
+                <li><a href="Home.aspx" class="current">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="SignIn.aspx">Sign in</a></li>
+                <li><a href="Register.aspx">Register</a></li>
+                <li><a href="Games_Page.aspx">Buy</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#" class="last">Profile</a></li>
+                <li><a href="AdminPage.aspx" runat="server" id="AdminOnly" visible="false" class="last">Admin</a></li>
+                <li><a href="#" class="last">Contact us</a></li>
+            </ul>
+        </div>
     </div>
-</div> <!-- end of menu -->
+    <!-- end of menu -->
 
-<div id="templatemo_header_wrapper">
-    <div id="templatemo_header_panel">        
-        <div class="templatemo_header"></div>        
-                
-    </div> <!-- end of header panel -->
-    <div class=" cleaner">&nbsp;</div>
-</div> <!-- end of header wrapper -->
+    <div id="templatemo_header_wrapper">
+        <div id="templatemo_header_panel">
+            <div class="templatemo_header"></div>
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+        </div>
+        <!-- end of header panel -->
+        <div class=" cleaner">&nbsp;</div>
+    </div>
+    <!-- end of header wrapper -->
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
 
     <!-- bottom panel -->
 
-<div id="templatemo_bottom_wrapper">
-    <div id="templatemo_bottom_panel">
-    
-        <div class="bottom_section_box">
-        <div class="templatemo_bottom_title"></div>
-        <p>This will be our footer with contains our contact details <br /> <a href="#">Read More</a></p>
-        <div class="cleaner">&nbsp;</div>
-        </div>
-        
-        <div class="bottom_section_box">
-        <div class="templatemo_bottom_title"> Game Brands</div>
-        <ul>
-        <li><a href="#">Ey Games</a></li>
-        <li><a href="#">XBox</a></li>
-        <li><a href="#">Pc</a></li>
-        </ul>
-        <div class="cleaner">&nbsp;</div>
-        </div>
-        
-        <div class="bottom_section_box">
-            <div class="templatemo_bottom_title">Other Links</div>
+    <div id="templatemo_bottom_wrapper">
+        <div id="templatemo_bottom_panel">
+
+            <div class="bottom_section_box">
+                <div class="templatemo_bottom_title"></div>
+                <p>This will be our footer with contains our contact details
+                    <br />
+                    <a href="#">Read More</a></p>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+
+            <div class="bottom_section_box">
+                <div class="templatemo_bottom_title">Game Brands</div>
+                <ul>
+                    <li><a href="#">Ey Games</a></li>
+                    <li><a href="#">XBox</a></li>
+                    <li><a href="#">Pc</a></li>
+                </ul>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+
+            <div class="bottom_section_box">
+                <div class="templatemo_bottom_title">Other Links</div>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sign in</a></li>
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
+                <div class="cleaner">&nbsp;</div>
+            </div>
             <div class="cleaner">&nbsp;</div>
         </div>
-        <div class="cleaner">&nbsp;</div>
     </div>
-</div> <!-- end of bottom panel -->
-<div class="cleaner_h20">&nbsp;</div>
-<!-- templatemo 101 design blog -->
-<!-- 
+    <!-- end of bottom panel -->
+    <div class="cleaner_h20">&nbsp;</div>
+    <!-- templatemo 101 design blog -->
+    <!-- 
 Design Blog Template 
 http://www.templatemo.com/preview/templatemo_101_design_blog 
 -->

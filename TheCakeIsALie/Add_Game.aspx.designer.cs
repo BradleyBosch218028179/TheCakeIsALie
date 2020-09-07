@@ -60,13 +60,22 @@ namespace TheCakeIsALie
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Quantity;
 
         /// <summary>
-        /// edit control.
+        /// rbtnStatusList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit edit;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtnStatusList;
+
+        /// <summary>
+        /// Add control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Add;
 
         /// <summary>
         /// game_title control.
@@ -96,13 +105,31 @@ namespace TheCakeIsALie
         protected global::System.Web.UI.HtmlControls.HtmlInputText Game_Image;
 
         /// <summary>
-        /// special control.
+        /// rbtnSpecial control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText special;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtnSpecial;
+
+        /// <summary>
+        /// DicsountLayout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DicsountLayout;
+
+        /// <summary>
+        /// Discount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Discount;
 
         /// <summary>
         /// comments control.
@@ -112,5 +139,14 @@ namespace TheCakeIsALie
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl comments;
+
+        /// <summary>
+        /// error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label error;
     }
 }

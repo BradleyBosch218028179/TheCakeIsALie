@@ -42,13 +42,22 @@ namespace TheCakeIsALie
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password2;
 
         /// <summary>
+        /// first_Name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText first_Name;
+
+        /// <summary>
         /// register control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit register;
+        protected global::System.Web.UI.WebControls.Button register;
 
         /// <summary>
         /// Email control.
@@ -58,6 +67,15 @@ namespace TheCakeIsALie
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText Email;
+
+        /// <summary>
+        /// Surname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Surname;
 
         /// <summary>
         /// Address control.
@@ -76,5 +94,14 @@ namespace TheCakeIsALie
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText Cellphone;
+
+        /// <summary>
+        /// error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label error;
     }
 }

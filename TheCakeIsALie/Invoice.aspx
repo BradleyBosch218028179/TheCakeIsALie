@@ -34,7 +34,7 @@
 
                         <div style ="font-size:24px";  class="content_right_titile_01">Chosen Game</div>
                         <ul>
-                            <li>Prouct Description: Battlefield 3 End Game</li>
+                            <li>Prouct Title: Battlefield 3 End Game</li>
                             <li>Number Of Copies: 2</li>
                             <li>Description: The preferred choice of a vast range of adventures and a lot of combat </li>
                             <li>Price: R200</li>
